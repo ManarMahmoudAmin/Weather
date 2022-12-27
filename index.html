@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header id="home" class="home">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container py-3">
+        <div class="logo ms-md-5 ms-sm-0 d-flex justify-content-center align-items-center">
+          <img src="images/Ract-img1.png" class="w-25 h-25" alt="">
+          <div class="mx-2">
+            <h1 class="h6"><a class="navbar-brand title text-light" href="#">Weather</a><br><span class="text-muted small mt-0">tagline goes here</span></h1>  
+          </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse pe-3" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mx-5 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-light mx-2 active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light mx-2" aria-current="page" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light mx-2" aria-current="page" href="#">Live cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light mx-2" aria-current="page" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light mx-2" aria-current="page" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+    <div class="width w-75 mx-auto">
+      <div class="container py-5">
+        <input class="form-control form-control-lg p-2 fs-6 mt-3" type="text" placeholder="Find your location..." id="searchInput">
+      </div>
+  
+      <div class="container my-2">
+        <div class="row g-0 ">
+            <div class="col-md-4">
+                <div class="forecast-table h-100 shadow ">
+                    <div class="forecast-header d-flex align-items-center justify-content-between px-4 py-2">
+                        <div id="today"></div>
+                        <div id="today-date"></div>
+                    </div>
+                    <div class="forecast-body p-4 py-5">
+                        <div class="lead fw-bold text-muted" id="city-location"></div>
+                         <div class="degree-details d-flex align-ir">
+                            <span class="degree d-inline-block h1"><p><span id="today-temperature"></span><sup>o</sup>C</p></span>
+                            <img class=" weathericon" src=""id="today-icon" alt="">
+                        </div> 
+                        <div id="today-state" class="mb-3 text-primary"></div>
+                        <div class="desc text-muted">
+                          <img src="images/Ract-img3.png" alt="" ><span class="me-3 ms-1"><span id="humidity"></span>%</span>
+                          <img src="images/Ract-img4.png" alt=""><span class="me-3 ms-1"><span id="wind"></span>km/h</span>
+                          <img src="images/Ract-img5.png" alt=""> <span class="me-3 ms-1" id="compass"></span>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              
+            <div class="col-md-4">
+              <div class="forecast-table h-100 shadow">
+                <div class="forecast-header text-center px-4 py-2">
+                    <div class="nextday"></div>
+                </div>
+                <div class="forecast-body text-center p-5">
+                  <img class="nextday-icon mt-3" src=""id="today-icon" alt="">
+                  <div class="next-degree"><h2><span class="max-degree"></span><sup>o</sup>C</h2></div>
+                  <div class="lead"><span class="min-degree"></span><sup>o</sup></div>
+                  <div class="nextday-state text-primary mb-3"></div>
+                </div>
+            </div>
+            </div>
+  
+            <div class="col-md-4">
+              <div class="forecast-table h-100 shadow ">
+                <div class="forecast-header text-center px-4 py-2">
+                    <div class="nextday"></div>
+                </div>
+                <div class="forecast-body text-center p-5">
+                  <img class="nextday-icon mt-3" src=""id="today-icon" alt="">
+                  <div class="next-degree"><h2><span class="max-degree"></span><sup>o</sup>C</h2></div>
+                  <div class="lead"><span class="min-degree"></span><sup>o</sup></div>
+                  <div class="nextday-state text-primary mb-3"></div>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+    </div>
+    </div>
+  </header>
+
+  <footer>
+    <div class="container w-75 mx-auto">
+      <div class="row gx-5">
+        <div class="col-md-8 mb-3">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Enter your email to subscribe..." aria-label="Enter your email to subscribe..." aria-describedby="button-addon2">
+            <button class="btn btn-primary" type="button">Subscribe</button>
+          </div>
+        </div>
+        <div class="col-md-offset-1 col-md-3">
+          <div class="links d-flex align-items-center justify-content-center">
+            <div class="icon rounded-circle d-flex justify-content-center align-items-center me-2"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="icon rounded-circle d-flex justify-content-center align-items-center me-2"><i class="fa-brands fa-twitter"></i></div>     
+            <div class="icon rounded-circle d-flex justify-content-center align-items-center me-2"><i class="fa-brands fa-google"></i></div>     
+            <div class="icon rounded-circle d-flex justify-content-center align-items-center me-2"><i class="fa-brands fa-pinterest"></i></div>   
+          </div>
+        </div>
+      </div>
+      <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+    </div>
+  </footer> 
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
